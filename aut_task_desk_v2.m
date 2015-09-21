@@ -508,9 +508,6 @@ try
 		'Press any key to continue'];
     DrawFormattedText(wholeScreen, msg, ...
         SS.margin.x, SS.margin.y,SS.textColor, SS.charPerLine, 0, 0, 1.5)
-    Screen('DrawText',wholeScreen, SS.warningText, ...
-        SS.warningPos(1), SS.warningPos(2),SS.warningColor,...
-        SS.text_bgcolor);
     Screen('Flip', wholeScreen);
         % Show Page
     KbWait([], 3);
